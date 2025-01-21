@@ -1,0 +1,8 @@
+#Ignore mac DS file
+.DS_Store
+
+#Ignore Config files 
+config.txt
+
+#Ignore log Files
+.log
