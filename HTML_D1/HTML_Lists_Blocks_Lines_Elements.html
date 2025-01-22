@@ -1,9 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Elements P3.</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists, Blocks and Lines</title>
+  <style>
+
+    .span, .div
+    {
+      background-color: aqua;
+    }
+    .adiv
+    {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p><span class="span">This is a span line</span></p> 
+    <!--typically used to apply styles or add 
+      functionality to a small text or inline elemenr
+       within a paragraph or sentence-->
+  </header>
+  <main>
+    <div class="div">
+      <p>This is a div block</p>
+      <p>This is another text inside the div element</p>
+    </div>
+    <!--the div element is therefore to create sections 
+      or contaiers within a webpage layout -->
+      <section>
+        <div class="adiv">
+            <ol>
+              <li>ordered</li>
+              <li>list</li>
+            </ol>
+            <!--he element ol createas list
+              where the order matters,
+              typically displayed with numbers-->
+            <ul>
+              <li>unordered</li>
+              <li>list</li>
+            </ul>
+            <!--the ul displays a list where the order
+              does not matter and is typicallly 
+              dysplayed with bullet points-->
+            <dl>
+              <dt>description list</dt>
+              <dd>defnition description</dd>
+            </dl>
+            <!--the dl element displays a list with a
+               dt (definition term) and 
+               a dd (definition description)
+              usually used to create lists or glossaries 
+              in wich eaach term has an associated description-->
+        </div>
+      </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
 </html>
