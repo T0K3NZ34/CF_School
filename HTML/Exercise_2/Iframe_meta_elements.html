@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" /> <!--html documents can only have one charset-->
+    <meta charset="UTF-8" />
+    <!--html documents can only have one charset-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="lets learn about the iframes" />
-    <meta name="author" content="Jorge the la Torre">
+    <meta name="author" content="Jorge the la Torre" />
     <!--meta elements should only be used in the head section and are invisibe to the user-->
     <title>IFrame</title>
     <!--Iframe stands for: inline element-->
@@ -13,14 +14,15 @@
   <body>
     <h1>Iframe Embedding</h1>
     <!--embedding means incorporation-->
-
+    <h2>YouTube</h2>
     <p>example of an iframe below</p>
-    <iframe
-      src="https://www.google.com/"
-      frameborder="100"
-      width="500"
-      height="400"
-    ></iframe>
-    <p>your browser might not suppert iframes</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kA05cqcCW38?si=SyOtZU-ofZrKjKst" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--you can add diffeerent attributes to customize the window-->
+    <!--  YT videos: The easiest way to do so is by going to the desired video, click on SHARE, click on Embed and then click on COPY to copy the iframe code. -->
+    <p>your browser might not support iframes</p>
+    <h2>Google maps</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d607179.3215213319!2d-99.47325683448517!3d19.390436620778413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2zQ2l1ZGFkIGRlIE3DqXhpY28sIENETVgsIE3DqXhpY28!5e1!3m2!1ses-419!2sat!4v1737804403804!5m2!1ses-419!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" gesturehandling="greedy"></iframe>
+    <!--Google Maps can also be embedded. You can pick the location you want to display, click on share, click on the “insert in map” tab and then click on “COPY HTML” to copy the iframe code.-->
+    <!--how ot make it so that i only need my scrollwheel to zoom in or out??-->
   </body>
 </html>
