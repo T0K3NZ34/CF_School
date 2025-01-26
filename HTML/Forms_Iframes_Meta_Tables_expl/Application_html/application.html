@@ -13,101 +13,113 @@
       <nav>
         <ul>
           <li>
-            <a
-              href="/HTML/Forms_Iframes_Meta_Tables_expl/Application_html/just_a_table.html"
-              >Just a table</a
-            >
+            <a href="#Food">Food</a>
           </li>
           <li>
-            <a
-              href="/HTML/Forms_Iframes_Meta_Tables_expl/Application_html/location.html"
-              >location</a
-            >
+            <a href="#You">You</a>
           </li>
+          <li><a href="#Ready">Ready</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h2>Apply here</h2>
-      <p>What do you like?</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Food</th>
-            <th>Aside</th>
-            <th>Drink</th>
-          </tr>
-        </thead>
+      <section id="Food">
+        <p>What do you like?</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Food</th>
+              <th>Aside</th>
+              <th>Drink</th>
+            </tr>
+          </thead>
+          <form>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="burger">burger</label>
+                  <input
+                    type="checkbox"
+                    name="Food"
+                    id="burger"
+                    value="burger"
+                  />
+                </td>
+                <td>
+                  <label for="fries">fries</label>
+                  <input
+                    type="checkbox"
+                    name="Aside"
+                    id="fries"
+                    value="fries"
+                  />
+                </td>
+                <td>
+                  <label for="fanta">fanta</label>
+                  <input
+                    type="checkbox"
+                    name="Drink"
+                    id="fanta"
+                    value="burger"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="pizza">pizza</label>
+                  <input type="checkbox" name="Food" id="pizza" value="pizza" />
+                </td>
+                <td>
+                  <label for="cheese">cheese</label>
+                  <input
+                    type="checkbox"
+                    name="Aside"
+                    id="cheese"
+                    value="cheese"
+                  />
+                </td>
+                <td>
+                  <label for="cola">cola</label>
+                  <input type="checkbox" name="Drink" id="cola" value="cola" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="sushi">sushi</label>
+                  <input type="checkbox" name="Food" id="sushi" value="sushi" />
+                </td>
+                <td>
+                  <label for="onionrings">onionrings</label>
+                  <input
+                    type="checkbox"
+                    name="Aside"
+                    id="onionrings"
+                    value="onionrings"
+                  />
+                </td>
+                <td>
+                  <label for="sprite">sprite</label>
+                  <input
+                    type="checkbox"
+                    name="Drink"
+                    id="sprite"
+                    value="sprite"
+                  />
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <th>You have an amazing taste!!</th>
+            </tfoot>
+          </form>
+        </table>
+      </section>
+      <section id="You">
         <form>
-          <tbody>
-            <tr>
-              <td>
-                <label for="burger">burger</label>
-                <input type="checkbox" name="Food" id="burger" value="burger" />
-              </td>
-              <td>
-                <label for="fries">fries</label>
-                <input type="checkbox" name="Aside" id="fries" value="fries" />
-              </td>
-              <td>
-                <label for="fanta">fanta</label>
-                <input type="checkbox" name="Drink" id="fanta" value="burger" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="pizza">pizza</label>
-                <input type="checkbox" name="Food" id="pizza" value="pizza" />
-              </td>
-              <td>
-                <label for="cheese">cheese</label>
-                <input
-                  type="checkbox"
-                  name="Aside"
-                  id="cheese"
-                  value="cheese"
-                />
-              </td>
-              <td>
-                <label for="cola">cola</label>
-                <input type="checkbox" name="Drink" id="cola" value="cola" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="sushi">sushi</label>
-                <input type="checkbox" name="Food" id="sushi" value="sushi" />
-              </td>
-              <td>
-                <label for="onionrings">onionrings</label>
-                <input
-                  type="checkbox"
-                  name="Aside"
-                  id="onionrings"
-                  value="onionrings"
-                />
-              </td>
-              <td>
-                <label for="sprite">sprite</label>
-                <input
-                  type="checkbox"
-                  name="Drink"
-                  id="sprite"
-                  value="sprite"
-                />
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <th>You have an amazing taste!!</th>
-          </tfoot>
-          
-        </form>
-      </table>
-      <form>
-        <label for="about_you">About you:</label>
-        <br>
-        <textarea
+          <label for="about_you">About you:</label>
+          <br />
+          <textarea
             name="about you"
             id="about_you"
             cols="30"
@@ -126,18 +138,53 @@
             placeholder="example@gmail.com"
           />
           <br />
-          <label for="phone_number">Phone Number</label>
+
+          <label for="phone_number">Phone Number:</label>
           <br />
           <input
-            type="number"
+            type="tel"
             name="phone_number"
             id="phone_number"
             placeholder="(+43) + your_number"
           />
-      </form>
-      <h2></h2>
-      <form></form>
+          <br />
+          <button type="reset">reset</button>
+        </form>
+      </section>
+      <br />
+      <br />
+      <section id="Ready">
+        <p>Are you ready?</p>
+        <ul>
+          <li>
+            <label for="yes">yes</label>
+            <input type="radio" name="Answer" id="yes" required />
+          </li>
+          <li>
+            <label for="no">no</label>
+            <input type="radio" name="Answer" id="no" />
+          </li>
+        </ul>
+      </section>
+      <button type="submit">submit</button>
     </main>
-    <footer></footer>
+    <aside>
+      <p>See other projects</p>
+      <ol>
+        <li>
+          <a href="/HTML/Exercise_1/Exercise_1_3_ADV/anymovie_index.html"
+            >ANYMOVIE</a
+          >
+        </li>
+        <li>
+          <a href="/HTML/Elements_expl/Restaurant_Website/index.html"
+            >Restaurant_Website</a
+          >
+        </li>
+      </ol>
+    </aside>
+    <footer>
+      <p>All rights reserved, 2025, Jorge De la Torre <sup>&copy;</sup></p>
+    </footer>
   </body>
 </html>
