@@ -1,25 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-    <style>
-        
-    </style>
-</head>
-<body>
+    <style></style>
+  </head>
+  <body>
     <main>
-       <form>
-        <label for="first name">First name</label> <!--for the user to identify what to do with the form you should put a lable there-->
-        <input type="text" name="first name" placeholder="First name">
+      <form action="destination_page.php">
+        <label for="fname">First name</label>
+        <!--for the user to identify what to do with the form you should put a LABEL there-->
+        <input type="text" name="firstname" id="fname" placeholder="Johnnny"/>
+        <!-- input type text, email, password and <textarea> ->(this is not an input type), requires text input-->
+        <br />
+        <label for="lastname">Last name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Peralta"/>
         
-        <label for="gender">Gender</label>
-        <ul>
-            <li><input type="checkbox" name="male" id="male">male</li>
-            <li><input type="checkbox" name="female" id="female">female</li>
-        </ul>
-       </form>
+        <!--the type element is there to ask what kind of input you'll like to use e.g. text, radio, checkbox. etc-->
+        <!-- the name element's here to tell the server which field does your id comes from ->(I like to see the name element as the name of a group) -->
+        <!-- the id element is to individualize an element in the file -->
+        <!-- the placeholder is there to give the user a hint of what to input in the form -->
+        
+        <p>gender:</p>
+
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+
+        <!-- the value element is here to tell the server what it is receiving-->
+
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+
+        <label for="other">other</label>
+        <input type="radio" name="gender" id="other" value="other" /><br />
+        <br />
+        <label for="drinks">Drinks</label>
+        <select name="drinks" id="drinks">
+          <option value="fanta">fanta</option>
+          <option value="cola">cola</option>
+          <option value="sprite">sprite</option>
+          <option value="icetee">icetee</option>
+        </select>
+        <!-- the select element creates a dropdown list, that combined with the option element you get a list with many options -->
+        <br />
+        <p>Food options</p>
+        <label for="burger">burger</label>
+        <input type="checkbox" name="food" id="burger" value="burger" />
+        <br />
+        <label for="pizza">pizza</label>
+        <input type="checkbox" name="food" id="pizza" value="pizza" />
+        <br />
+        <label for="fries">fries</label>
+        <input type="checkbox" name="food" id="fries" value="fries" />
+        <br />
+        <br />
+        <label for="textarea">Tell us about you</label>
+        <br />
+        <textarea name="textarea" id="about_you" cols="30" rows="10" required></textarea>
+        <!-- the textarea element creates an area where user can input some text -->
+        <br />
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+        <input type="button" value="click me" onclick="dosmth()">
+        <!-- when using the input type button, you're gonna be able to customize your button with an action you'd like it to do, this can only be done with Java script tho  -->
+        <!-- the button element creates a buton with already given properties like submitting and resetting -->
+      </form>
     </main>
-</body>
+  </body>
 </html>
