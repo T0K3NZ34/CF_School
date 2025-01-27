@@ -40,12 +40,18 @@
         <input type="radio" name="gender" id="other" value="other" /><br />
         <br />
         <label for="drinks">Drinks</label>
-        <select name="drinks" id="drinks">
-          <option value="fanta">fanta</option>
-          <option value="cola">cola</option>
-          <option value="sprite">sprite</option>
-          <option value="icetee">icetee</option>
+        <select multiple="2" name="drinks" id="drinks">
+          <optgroup label="cola">
+            <option value="fanta">fanta</option>
+            <option value="cola">cola</option>
+          </optgroup>
+          <optgroup label="sprite">
+            <option value="sprite">sprite</option>
+            <option value="icetee">icetee</option>
+          </optgroup>
         </select>
+        
+        <!-- the multiple element lets you select more than one option -->
         <!-- the select element creates a dropdown list, that combined with the option element you get a list with many options -->
         <br />
         <p>Food options</p>
@@ -69,6 +75,11 @@
         <input type="button" value="click me" onclick="dosmth()">
         <!-- when using the input type button, you're gonna be able to customize your button with an action you'd like it to do, this can only be done with Java script tho  -->
         <!-- the button element creates a buton with already given properties like submitting and resetting -->
+     <br>
+      <label>lastname
+        <input type="text" name="text" id="text">
+      </label>
+      <!-- when nesting input, we dont need the "for" nor "id" but it is a good practie to put "id" and "name" -->
       </form>
     </main>
   </body>
