@@ -23,18 +23,20 @@
       </nav>
     </header>
     <main>
-      <h2>Apply here</h2>
-      <section id="Food">
-        <p>What do you like?</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Food</th>
-              <th>Aside</th>
-              <th>Drink</th>
-            </tr>
-          </thead>
-          <form>
+      <form>
+        <h2>Apply here</h2>
+        <section id="Food">
+          <p>What do you like?</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Food</th>
+                <th>Aside</th>
+                <th>Drink</th>
+              </tr>
+            </thead>
+
             <tbody>
               <tr>
                 <td>
@@ -61,7 +63,7 @@
                     type="checkbox"
                     name="Drink"
                     id="fanta"
-                    value="burger"
+                    value="fanta"
                   />
                 </td>
               </tr>
@@ -112,15 +114,13 @@
             <tfoot>
               <th>You have an amazing taste!!</th>
             </tfoot>
-          </form>
-        </table>
-      </section>
-      <section id="You">
-        <form>
+          </table>
+        </section>
+        <section id="You">
           <label for="about_you">About you:</label>
           <br />
           <textarea
-            name="about you"
+            name="about_you"
             id="about_you"
             cols="30"
             rows="10"
@@ -138,9 +138,9 @@
             placeholder="example@gmail.com"
           />
           <br />
-          <label>Birht date
-
-            <input type="date" name="Birth" id="">
+          <label
+            >Birth Date
+            <input type="date" name="Birth" id="birth" />
           </label>
 
           <label for="phone_number">Phone Number:</label>
@@ -153,25 +153,25 @@
           />
           <br />
           <button type="reset">reset</button>
-        </form>
-      </section>
-      <br />
-      <br />
-      <section id="Ready">
-        <p>Are you ready?</p>
-        <ul>
-          <li>
-            <label for="yes">yes</label>
-            <input type="radio" name="Answer" id="yes" required />
-          </li>
-          <li>
-            <label for="no">no</label>
-            <input type="radio" name="Answer" id="no" />
-          </li>
-          <!-- radio inputs need to have a name -->
-        </ul>
-      </section>
-      <button type="submit">submit</button>
+        </section>
+        <br />
+        <br />
+        <section id="Ready">
+          <p>Are you ready?</p>
+          <ul>
+            <li>
+              <label for="yes">yes</label>
+              <input type="radio" name="Answer" id="yes" required />
+            </li>
+            <li>
+              <label for="no">no</label>
+              <input type="radio" name="Answer" id="no" />
+            </li>
+            <!-- radio inputs need to have a name -->
+          </ul>
+        </section>
+        <button type="submit">submit</button>
+      </form>
     </main>
     <aside>
       <p>See other projects</p>
