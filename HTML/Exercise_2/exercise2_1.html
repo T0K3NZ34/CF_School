@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eyyy a Form" />
+    <meta name="author" content="Jorge Xavier De la Torre Landa" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Registration form</h1>
+    </header>
+    <main>
+      <form>
+        <!-- <form action="index.php" method="post"> index php is the file where the answers of the forms are sent
+    post por sensitive data, post is for insensitive data -->
+        <fieldset>
+          <legend>Contact Data</legend>
+          <label>
+            First name:
+            <input
+              type="text"
+              name="Firstname"
+              id="Firstname"
+              required
+              placeholder="e.g. Spongebob"
+            />
+          </label>
+          <br />
+          <br />
+          <label>
+            Last name:
+            <input
+              type="text"
+              name="Lastname"
+              id="Lastname"
+              required
+              placeholder="e.g. Squarepants"
+            />
+          </label>
+          <br />
+          <br />
+          <label>
+            Course:
+            <select name="Course" id="Course">
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="Java">Java</option>
+            </select>
+          </label>
+          <br />
+          <br />
+          <label> Hobbies: </label> <!--DO I NEED HERE THE NAME ATTRIBUTE FOR CHECKBOX/RADIO????-->
+          <br />
+          <label> <input type="checkbox" id="Programming" />Programming </label>
+          <br />
+          <label> <input type="checkbox" id="Basketball" />Basketball </label>
+          <br />
+          <label> <input type="checkbox" id="Football" />Football </label>
+          <br />
+          <label> <input type="checkbox" id="Novel" />Reading Novel </label>
+          <br />
+          <br />
+          <label>
+            Phone:
+            <input
+              type="tel"
+              id="tel"
+              placeholder="e.g. (+43) 669 333 999"
+              required
+            />
+          </label>
+          <br />
+          <br />
+          <label>
+            Address:
+            <br />
+            <textarea
+              id="Address"
+              cols="50"
+              rows="4"
+              placeholder="e.g. Blalagasse 20, 3030, Vienna, Austria"
+            ></textarea>
+          </label>
+          <br />
+          <br />
+          <label>
+            Email:
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="examp@example.com"
+            />
+          </label>
+          <br />
+          <br />
+          <label>
+            Password:
+            <input
+              type="password"
+              id="password"
+              placeholder="min.9 char. max.15"
+              minlength="9"
+              maxlength="15"
+              required
+            />
+            <!--max and minlenght!!!-->
+          </label>
+        </fieldset>
+        <hr />
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <p>All rights reserved, 2025, Jorge.X <sup>&copy;</sup></p>
+    </footer>
+  </body>
+</html>
