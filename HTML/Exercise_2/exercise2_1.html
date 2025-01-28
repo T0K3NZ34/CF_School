@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Eyyy a Form" />
     <meta name="author" content="Jorge Xavier De la Torre Landa" />
+    <script src="https://kit.fontawesome.com/dc8237aad2.js" crossorigin="anonymous"></script>
     <title>Registration Form</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
         <!-- <form action="index.php" method="post"> index php is the file where the answers of the forms are sent
     post por sensitive data, post is for insensitive data -->
         <fieldset>
-          <legend>Contact Data</legend>
+          <legend>Contact Data <i class="fa-solid fa-user"></i></legend>
           <label>
             First name:
             <input
@@ -44,9 +45,17 @@
           <label>
             Course:
             <select name="Course" id="Course">
-              <option value="HTML">HTML</option>
-              <option value="CSS">CSS</option>
-              <option value="Java">Java</option>
+              <optgroup label="Frontend"> 
+                <!-- <option disabled="disabled" selected="selected">Please select an option</option>
+                |
+                the attribute disabled makes it so that the text is shown invisible when you click on it, and the selected attribute makes it so that the text is the first option it pops when loading the page--> 
+                <!-- the optgoroup makes it so that the options inside of it have a unique lable to them -->
+                  <option value="HTML">HTML</option>
+                  <option value="CSS">CSS</option>
+              </optgroup>
+              <optgroup label="backend"> 
+                  <option value="Java">Java</option>
+              </optgroup>
             </select>
           </label>
           <br />
@@ -64,17 +73,19 @@
           <br />
           <label>
             Phone:
+            
             <input
               type="tel"
               id="tel"
               placeholder="e.g. (+43) 669 333 999"
               required
-            />
+            /> 
+            <i class="fa-solid fa-phone"></i>
           </label>
           <br />
           <br />
           <label>
-            Address:
+            Address <i class="fa-solid fa-house"></i> :
             <br />
             <textarea
               id="Address"
