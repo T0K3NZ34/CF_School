@@ -10,6 +10,11 @@
       crossorigin="anonymous"
     ></script>
     <title>Registration Form</title>
+    <style>
+        .option-hobbies{
+            color: fuchsia;
+        }
+    </style>
   </head>
   <body>
     <header>
@@ -64,30 +69,28 @@
           <br />
           <br />
           <label> Hobbies: </label>
-          <!--DO I NEED HERE THE "NAME" ELEMENT FOR CHECKBOX/RADIO???? better for back end??-->
+          <!--The Id attribute is used when you want to make something unique, in the checkboxes case, you dont need an id since you can style everything using a span with a class -->
           <br />
           <label>
             <input
               type="checkbox"
               name="hobbies"
-              id="programming"
-            />Programming
+            /><span class="option-hobbies">Programming</span>
           </label>
           <br />
           <label>
             <input
               type="checkbox"
               name="hobbies"
-              id="basketball"
-            />Basketball
+            /><span class="option-hobbies">Basketball</span>
           </label>
           <br />
           <label>
-            <input type="checkbox" name="hobbies" id="football" />Football
+            <input type="checkbox" name="hobbies"/><span class="option-hobbies">Football</span>
           </label>
           <br />
           <label>
-            <input type="checkbox" name="hobbies" id="novel" />Reading novel
+            <input type="checkbox" name="hobbies"/><span class="option-hobbies">Reading novel</span>
           </label>
           <br />
           <br />
