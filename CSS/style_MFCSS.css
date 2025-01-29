@@ -1,0 +1,73 @@
+body {
+  margin: 10px;
+}
+
+
+
+
+/* THIS ARE BASIC SELECTORS */
+
+#products{
+
+}
+/* we CAN'T have multipe elements with the same id */
+.product{
+
+}
+/* we can have multiple elements with the same class */
+p{
+
+}
+/* we can select elements by themselves */
+a [target="_blank"]{
+
+}
+/* we can also select elements by attributes  */
+a [href="http://google.com"]{
+
+}
+/* we can also select by typing the whole URL, THIS IS NOT SECURE SINCE ANY CHANGE MADE INSIDE THE URL WILL MAKE THIS CONDITION FALSE */
+a [href*="https"]{
+
+}
+/* The * before the = means it will search for the existance of the world (in this case) google in any (in this case)Link 
+
+Using ^ before the = it meants it will look for any (in this case) Links that start with the word google
+
+Using $ will check if it ends with the given value
+*/
+a[href^="https"][href$=".com"]{
+
+}
+/* You can also give multiple conditions to look for  */
+
+
+/* *******MUST OF THE TIME WE SELECT ELEMENTS BY "TYPE", "ID" AND "CLASS"****** */
+
+
+
+
+
+
+
+
+/* THIS ARE RELATIONAL SELECTORS */
+/* very fragile and should only be used if we are sure that the element is gonna stay where it is forever */
+
+
+#loco p{
+
+}
+/* This will select the paragraph that comes inside the (in this case) loco section  */
+#loco > p{
+
+}
+/* This will only select the first paragph in the (in this case) loco section (1st child) */
+#loco + p{
+
+}
+/* This will select the next paragraph that comes right after the (in this case) loco section (direct sibling) */
+#loco ~ p{
+
+}
+/* This will select all paraagraphs after the (in this case) loco section */
