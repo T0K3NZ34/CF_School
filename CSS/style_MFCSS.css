@@ -31,7 +31,7 @@ a [href="http://google.com"]{
 a [href*="https"]{
 
 }
-/* The * before the = means it will search for the existance of the world (in this case) google in any (in this case)Link 
+/* The * before the = means it will search for the existance of the world (in this case) google in any (in this case)Link there is on the page
 
 Using ^ before the = it meants it will look for any (in this case) Links that start with the word google
 
@@ -76,10 +76,24 @@ a[href^="https"][href$=".com"]{
 
 /* BOX_MODEL */
 /* EVERY ELEMENT IN WEB DESIGN IS A RECTANGULAR BOX */
+
+*{
+  box-sizing: border-box; 
+  /* The * is a univesal selector, this will affect the whole page */
+
+  /* Setting the box-sizing to border-box makes it so that the box including the border and the padding will be the exaact ammount of pixels as I said I wanted them to be, this will alaso make it so that my element srinks in order to thet the wished result  */
+
+  /* VERY IMPORTANT FOR THE FUTURE */
+}
+
 div{
+  background-color: aquamarine;
   border: 1px solid black; /*This is the border of the box of the div */
-  max-width: 300px; In the case of width and height, the max and min words make it possible that the box has a min size and a max size if the content in the box overflows the given max it will spit out the content of the box 
+   max-width: 300px; /*In the case of width and height, the max and min words make it possible that the box has a min size and a max size if the content in the box overflows the given max it will spit out the content of the box  */
   max-height: 300px;
-   margin: 50px; /*The margin is the distance of the div to other elements */
-   padding: 100px 50px 25px 5px; /*The padding is the distance of the elements inside of the div to the border */
+                /* Setting a min-height will make it possible for the box to grow it needed as long as you dont add any max height, the same counts to the width */
+  margin: auto; /*The margin is the distance between other elements (boxes) */
+                /* The "auto" property makes it so that you can centre the element */
+  padding: 100px 50px 25px 5px; /*The padding is the distance of the elements inside of the box to the border */
+  /* The 4 numbers on the padding properties are the 4 sides of the box, top, right, bottom, left (clockwise written)  */
 }
