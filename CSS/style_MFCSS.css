@@ -15,6 +15,7 @@ body {
 
 }
 /* we can have multiple elements with the same class */
+/* You can give more casses to one element by making a space between classes */
 p{
 
 }
@@ -71,3 +72,14 @@ a[href^="https"][href$=".com"]{
 
 }
 /* This will select all paraagraphs after the (in this case) loco section */
+
+
+/* BOX_MODEL */
+/* EVERY ELEMENT IN WEB DESIGN IS A RECTANGULAR BOX */
+div{
+  border: 1px solid black; /*This is the border of the box of the div */
+  max-width: 300px; In the case of width and height, the max and min words make it possible that the box has a min size and a max size if the content in the box overflows the given max it will spit out the content of the box 
+  max-height: 300px;
+   margin: 50px; /*The margin is the distance of the div to other elements */
+   padding: 100px 50px 25px 5px; /*The padding is the distance of the elements inside of the div to the border */
+}
