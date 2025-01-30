@@ -1,0 +1,24 @@
+div{
+    margin: 5px;
+}
+
+h1{
+    color: blue;
+}
+
+.left > span{
+    visibility: hidden;
+}
+
+.right p{
+    visibility: hidden;
+    display: none;
+}
+
+p{
+    color: red;
+}
+
+img{
+    height: 300px;
+}
