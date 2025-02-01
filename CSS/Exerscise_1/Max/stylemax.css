@@ -1,0 +1,64 @@
+#x {
+  color: #0000ff;
+  font-family: "Lucida Grande";
+}
+
+#a1 {
+  border-style: double;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#wacepic {
+  background-image: "wavepic";
+}
+
+#p-max {
+  position: absolute;
+  left: 0; 
+  transform: translateX(-100%);
+}
+
+/* JORGE */
+#a2 {
+  background-color: rgb(173, 236, 215);
+  border-color: rgb(0, 91, 74);
+  border-style: dashed;
+}
+
+#th2 {
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#p2 {
+  background-color: beige;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left;
+  border-radius: 10px;
+  width: fit-content;
+  float: left;
+}
+
+#list {
+  background-color: beige;
+  width: fit-content;
+  text-align: center;
+  float: left;
+}
+
+#spic {
+  border-radius: 50%;
+  float: right;
+  /* Float is  there to move your img/text freely */
+  float: right;
+}
+
+#d2{
+ position: absolute;
+ bottom: 0;
+ left: 10px;
+ 
+}
