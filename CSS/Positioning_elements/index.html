@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- You can link web fonts to make your website look better too -->
+    <style>
+
+div{
+
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+    margin: 20px;
+    font-size: 14pt;
+    
+
+    /* Font size can be given in pt the default for paragraphs is 14 pt, and it can also be given in percentage  */
+    text-align: center;
+    /* Align allows us to put the text to the left, right , center, and justify (this causes the element to fill the entire width) */
+
+    /* There is also text-decoration but if you want to find oyt what you can do look it up */
+
+    text-transform: capitalize;
+    /* you can also make it so that the text is displayed is in upper or lowercase if the word is capitalized or you can just do none */
+
+   /* There are ways to modify Text:
+    word-spacing
+    letter-spacing
+    line-height ->with this you can put the text more higher or lower */
+
+    text-shadow: 1px 1px 0px red;
+
+    /* For the text shadow it applies the same stuff as for the box shadow */
+
+    box-shadow: 2px 2px 4px 2px rebeccapurple, 2px 2px 4px 3px red;
+
+    /*The boxshadow makes it possible for you to create SHADOWS the order of values goes as follows: [horizontal-offset] [vertival-offset] [blur-radius] [spread-radious] [color]
+
+    you can put different shadows by separating them with a comma
+
+    if you put the word inset before the values it will create an inside shadow:
+     box-shadow: inset 2px 2px 4px 2px rebeccapurple, 2px 2px 4px 3px red; */
+}
+
+#position{
+
+    border: solid black;
+    /* position: absolute; */
+    /* position: relative; */
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    left: 500px;
+/* 
+Position absolute means you can move the div in a kind of coordinate table. For example, with top: 0; and left: 500px;, the div will be positioned 0 pixels from the top and 500 pixels from the left. The original space is not filled by other elements. 
+*/
+
+/* 
+Relative positioning means you can move the div relative to its original position. The space it originally occupied is preserved in the document flow, so other elements do not move into that space. 
+*/
+
+/* 
+Fixed positioning means the div will stay fixed at a specific position on the screen, regardless of scrolling. Like absolute positioning, the space originally occupied by the div is not filled by other elements. 
+*/
+
+/* 
+Sticky positioning means the div will act like relative positioning until it reaches a specific point (e.g., when scrolling down to the top of the screen). At that point, it will stick in place until the user scrolls back up. 
+*/
+
+
+    /* In order to see the border it has to be solid */
+}
+
+p{
+
+    text-indent: 20px;
+    
+    /* This moves the first line of a PARAGRAPH to the right but you can aslo move it to the left putting negative numbers */
+}
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div></div>
+    <div></div>
+    <div id="position"> Position </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div>lol </div>
+    <span>lol</span>
+
+    <!-- Divs are block-level elements that often contain larger groups of content and span is an inline element that is used for smaller chunks of content -->
+</body>
+</html>
