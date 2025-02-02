@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Lato&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    background-color: black;
+    gap: 3rem;
+    line-height: 1.3rem;
+    font-size: clamp(.8rem, 2vw, 1.3rem);
+    text-align: center;
+
+}
+/* comment */
+
+section{
+    background-color: #333;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1{
+    margin-block: 2rem;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: 'Allerta Stencil', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: clamp(.8rem, 2vw, 1.3rem);
+    color: #A4A7B7;
+
+    width: 100%;
+
+}
+h2>span{
+    display: block;
+    left: 50%;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    margin: 0 auto 1.5rem;
+}
+h2::after{
+    margin: 2rem auto;
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: #5d6592;
+    
+}
+
+.example{
+    border: 2px solid #edc113;
+    padding: 1rem;
+    margin-block: 1rem;
+    width: 90%;
+}
+
+code{
+    font-size: 1.3rem;
+    background-color: #505050;
+    margin: .2rem .5rem;
+    padding: 0 .5rem;
+
+}
+p{
+    margin-block: .5rem;
+    text-align: center;
+}
+
+a, a:visited{
+    color: #A4A7B7;
+}
+
+ul > *{
+    text-align: left;
+    margin-inline-start: 50%;
+    transform: translateX(-50%);
+}
+.whitesmoke{
+    color: whitesmoke;
+}
