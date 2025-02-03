@@ -23,13 +23,14 @@
 #a2 {
   background-color: rgb(173, 236, 215);
   border-color: rgb(0, 91, 74);
-  border-style: dashed;
+  border-style:solid;
 }
 
 #th2 {
   font-style: italic;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 #p2 {
@@ -38,27 +39,55 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: left;
   border-radius: 10px;
-  width: fit-content;
-  float: left;
+  width: 600px;
+  height: 290px;
+  box-shadow: inset 1px 0px 9px 2px rgba(210, 171, 122, 0.708);
+  text-align: center;
+  padding: 5px;
 }
 
 #list {
   background-color: beige;
-  width: fit-content;
-  text-align: center;
-  float: left;
+  width: 200px;
+  text-align: left;
+  position: absolute;
+  top: 680px;
+  left:900px;
+  border-radius: 50px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(245, 245, 220, 0.4);
+  box-shadow: inset 1px 0px 9px 2px rgba(210, 171, 122, 0.708);
 }
 
 #spic {
   border-radius: 50%;
-  float: right;
-  /* Float is  there to move your img/text freely */
-  float: right;
+  position: absolute;
+  left: 650px;
+  top: 630px;
+  box-shadow: 3px 1px 5px 4px rgb(21, 158, 108);
+  border-style: solid;
+  border-color: aquamarine;
+}
+
+#nasa{
+ width: 450px;
+ position: absolute;
+ left: 1185px;
+ top: 630px;
+ box-shadow: 3px 1px 5px 4px rgb(21, 158, 108);
+  border-style: solid;
+  border-color: aquamarine;
 }
 
 #d2{
  position: absolute;
- bottom: 0;
- left: 10px;
- 
+ left: 820px;
+ top: 870px;
+ border: solid;
+ padding: 1px;
+ font-family: Arial, Helvetica, sans-serif;
+ border-radius: 50px;
+ width: 80px;
+ text-align: center;
 }

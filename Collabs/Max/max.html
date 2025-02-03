@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="nav">
         <ul>
           <li id="x"><a href="#first">The H2</a></li>
           <li id="y"><a href="#second">The second H2</a></li>
@@ -48,6 +48,8 @@
               id="1pic"
             />
             <p style="background-image: url('https://cdn.pixabay.com/photo/2016/12/17/14/33/wave-1913559_640.jpg');">
+
+             <!-- @MAX you put an image into a p -->
            
             <details>
               This is Spiderman
@@ -70,19 +72,21 @@
       <article>
         <div id="a2">
           <fieldset>
-            <legend>
-              <h2 id="th2">The second H2</h2>
+            <legend id="th2">
+              <h2 style="text-shadow: 4px 1px 6px rgb(21, 158, 108);" >The second H2</h2>
             </legend>
-            <p id="p2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio
-              reprehenderit sit natus fugit sunt distinctio nemo maxime
-              cupiditate nihil? Rem repellendus facere natus maiores vero dolor,
-              totam cumque architecto eligendi ut voluptatem? Eos nisi
-              doloremque distinctio quae beatae assumenda necessitatibus ex esse
-              quidem voluptatem quis cum error porro obcaecati facilis quas,
-              omnis consectetur architecto, exercitationem incidunt corporis.
-              Assumenda, excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, architecto, repudiandae ad obcaecati impedit minima dolorum ea suscipit reiciendis quaerat laborum debitis natus placeat quia doloremque velit voluptate saepe unde officiis aperiam? Dolore veniam unde dicta numquam fugiat odit fugit esse facilis eos ut, iste eum eligendi ipsum ratione assumenda.
-            </p>
+            <div id="p2">
+              <p >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio
+                reprehenderit sit natus fugit sunt distinctio nemo maxime
+                cupiditate nihil? Rem repellendus facere natus maiores vero dolor,
+                totam cumque architecto eligendi ut voluptatem? Eos nisi
+                doloremque distinctio quae beatae assumenda necessitatibus ex esse
+                quidem voluptatem quis cum error porro obcaecati facilis quas,
+                omnis consectetur architecto, exercitationem incidunt corporis.
+                Assumenda, excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, architecto, repudiandae ad obcaecati impedit minima dolorum ea suscipit reiciendis quaerat laborum debitis natus placeat quia doloremque velit voluptate saepe unde officiis aperiam? Dolore veniam unde dicta numquam fugiat odit fugit esse facilis eos ut, iste eum eligendi ipsum ratione assumenda.
+              </p>
+            </div>
             <div id="list">
               <ul>
                 <li>Lorem.</li>
@@ -93,15 +97,15 @@
             </div>
             <img
               src="/Media/superior spiderman.jpeg"
-              alt="anothe spiderman"
+              alt="another spiderman"
               id="spic"
             />
-            <details id="d2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              commodi, quos perferendis nulla doloribus est animi nam
-              exercitationem cumque mollitia!
-              
-            </details>
+            <div id="d2">
+              <details >
+                Lorem ipsum dolor sit amet consectetur adipi.
+              </details>
+            </div>
+            <img src="/Media/pic.jpg" alt="nasa" id="nasa"/>
           </fieldset>
         </div>
       </article>  
@@ -121,8 +125,9 @@
           Subscribe to the Newspaper?
           <input type="checkbox" class="checkbox" /> yes
           <input type="checkbox" class="checkbox" /> no
-        </label>
+        </label>  
       </form>
+      <button> <input type="submit"></button>
       <p style="background-color: rgb(162, 220, 162); width: fit-content">
         All right reserved, 2025, Max, Jorge <sup>&copy;</sup>
       </p>
