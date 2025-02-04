@@ -1,0 +1,65 @@
+img {
+  width: 50px;
+}
+#face {
+  width: 50vw;
+ height: auto;
+ position: relative;
+}
+
+.container{
+border: solid black;
+position: relative;
+width: auto;
+height: auto;
+text-align: center;
+}
+
+#eyes1{
+position: absolute;
+top: 35%;
+left: 40%;
+width: 20vw;
+}
+
+#mouth2{
+position: absolute;
+top: 60%;
+left: 40%;
+width: 20vw;
+z-index: 2;
+}
+
+#nose1{
+position: absolute;
+top: 40%;
+left: 45.5%;
+width: 8vw;
+}
+
+#ears1{
+position: absolute;
+top: 15%;
+left: 23%;
+width: 50vw;
+}
+
+#hair2{
+position: absolute;
+top: 55%;
+left: 40%;
+width: 20vw;
+z-index: 1;
+}
+
+/* The z indexex make it possible for you to be able to put the images one on another
+
+1 is the one that comes first and 2 second etc....*/
+
+#hat{
+position: absolute;
+top: -5%;
+left: 32%;
+width: 35vw;
+}
+
