@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom variables</title>
+    <style>
+        :root{
+            --primary_color:red;
+
+            /* TO declarae a new variable you have to start wit a -- then the name and then the attribute */
+        }
+
+        p{
+            color: var(--primary_color);
+            /* to use the variable simply use var() and insert the new variable */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Custom variables let you, well create your own variables tf -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eius corporis facilis accusantium fuga aperiam, non numquam omnis velit tenetur quasi consequuntur harum vitae dolorem provident earum cum enim repudiandae.</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox
+    </title>
+    <style>
+        .container{
+            border: solid blue;
+            display: flex;
+            /* justify-content: space-around; */
+            flex-flow: row;
+            /* flex flow will make it possible for you to be able to position the items along the axeses */
+            /* flex-direction:column; */
+            /* Flex direction will rotate the main axis so that it looks up down left or right */
+            /* flex-wrap: wrap; */
+            /* Flex wrap makes it so that when the window shrinks all the items will be put down below  */
+            
+        }
+        div{
+            border: 4px solid black;
+            flex: 1 1 0;
+            /* flexproperties are "flex: grow shrink basis;"" */
+            /* align-self: center; */
+            /* this will make it possible to align the item on a flex container level */
+        }
+        #one{
+            background-color: blue;
+            color: aliceblue;
+        }
+        #two{
+            background-color: blue;
+            color: aliceblue;
+        }
+        #three{
+            background-color: blue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one">Lorem ipsum dolor sit.</div>
+        <div id="two">Lorem, ipsum.</div>
+        <div id="three">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+    </div>
+
+    <!-- a flex box contains flex items, opposite as what we are used to the flex box puts pur elements in a horizontal position instad of a vertical one  -->
+</body>
+</html>
