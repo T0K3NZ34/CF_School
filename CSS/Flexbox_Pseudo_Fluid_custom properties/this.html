@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 3</title>
+    <style>
+      .p1 {
+        width: 1000px;
+        border: solid blue;
+        margin: 0 auto;
+        /* "Margin 0 auto" makes the section being aligned centered */
+      }
+
+      .p2 {
+        width: 100%;
+        border: solid blue;
+        margin: 0 auto;
+      }
+
+      .container {
+        width: 500px;
+        max-width: 100%;
+        position: relative;
+        border: solid green;
+        padding: 0px;
+        text-align: center;
+        overflow: auto;
+        /* oevrflow ato makes it possible to scroll when overflow happenes */
+        margin: 0 auto;
+        align-content: center;
+      }
+
+      #im1 {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* using min and max width prevent in this case our image to become bigger or smaller  */
+
+      #p3 {
+        padding: 10px 10px 10px 10px;
+        position: absolute;
+        color: aliceblue;
+        max-width: 100%;
+        max-height: 100%;
+        /* top:50%; */
+        background-color: rgba(169, 169, 169, 0.331);
+        /* overflow: auto; */
+      }
+
+      .colum{
+        width: 250px;
+        border: 5px solid seagreen;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        translate: -50% ;
+      }
+
+      .colum img{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Fixed vs Fluid -->
+
+    <section class="p1">
+      <p>
+        This is a fixed layout
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam autem
+        exercitationem, enim maiores officia sequi voluptatem beatae nesciunt
+        eum, veritatis illo ipsa quisquam reiciendis tenetur asperiores cum a?
+        Deserunt, eaque? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Quaerat quisquam voluptatum praesentium debitis provident facere
+        dicta minima laborum soluta aperiam quas, asperiores, saepe hic
+        laudantium id dignissimos placeat quia totam. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Harum at ducimus perspiciatis, ea aperiam
+        dignissimos incidunt. Facilis libero magni voluptatibus quas eius, hic
+        porro ad, atque assumenda neque quod possimus.
+      </p>
+    </section>
+
+    <!-- Since the width is bigger than the screensize this will make a slidebar apperar for use to be able to scroll -->
+
+    <section class="p2">
+      <p>
+        This is a fluid layout
+        <br />
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos officiis
+        in architecto sequi culpa possimus delectus esse, quasi quidem et,
+        eveniet beatae tenetur praesentium, enim sint odio veniam. Sed nam,
+        officiis quis eveniet ex optio ab adipisci repudiandae, sit quo iste.
+        Labore quam similique voluptatem laborum aut neque. Voluptate in unde
+        sequi eaque! Magni ipsam deleniti quaerat dolor, quos ut quia alias,
+        soluta sequi dolorem vero quasi dolores ab. Laboriosam porro cumque
+        natus nostrum incidunt. Ab ipsam possimus natus! Expedita esse nulla
+        praesentium aliquam ipsam perspiciatis iure a officiis vel possimus.
+        Consequatur itaque aut libero nisi. Quam dicta iste odio. Lorem ipsum
+        dolor sit amet consectetur, adipisicing elit. Mollitia blanditiis
+        quibusdam, ducimus a modi sequi tenetur ex, consectetur quo deserunt
+        repudiandae eum alias. Repellendus nihil dolores debitis fuga assumenda
+        fugit molestias quasi tempora non ipsum quam natus exercitationem,
+        maxime quaerat. Ipsum odit nisi sunt perferendis, odio tenetur atque!
+        Incidunt, assumenda. Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Doloribus mollitia quos similique modi maxime a et odit nobis
+        blanditiis corrupti, ullam impedit repellendus asperiores vitae ipsum
+        delectus ratione veniam ut? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Porro quos voluptas reprehenderit sed, temporibus
+        labore repellat voluptates quam aliquam vitae praesentium dolorum,
+        officia quae nesciunt impedit aut, reiciendis nam doloremque.
+      </p>
+    </section>
+
+    <!-- When percentage is being used it makes it possible to (in this case) the paragraph as big as you want and if the window is srinkwd it will take the amount of percentage you gave to fit all the contetnt in the screen, This is a fluid layout -->
+    <div class="container">
+      <p id="p3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi odit
+        rerum sed. Nostrum quis, nam nisi consequuntur necessitatibus obcaecati
+        dolore! Voluptas doloremque, alias doloribus maiores nobis atque
+        architecto odio ad? Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Nulla minus quisquam quaerat quia rem sapiente magni odio impedit
+        aliquam, odit consequuntur asperiores fugiat quasi vel obcaecati veniam
+        tempore fuga eos. Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Fugiat voluptate atque reprehenderit eligendi. Perferendis dolore
+        culpa autem quaerat velit quia et nemo sit, amet deserunt. Officia
+        veniam vero quis libero. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Error quam quidem non culpa similique iusto quae
+        nobis, corrupti aut voluptatem maiores veritatis, nam animi cupiditate
+        commodi. Sit impedit et totam.
+      </p>
+      <img src="/Media/mixed-berries-1470228_1280.jpg" alt="berries" id="im1" />
+    </div>
+    <br />
+    <br />
+  <br>
+    <!-- Here you have to create a container for the image to be in and then change the width to be some kind of percentage of the container, the container also has a percentage relative to the whole screen  -->
+
+    <div class="colum">
+      <img src="/Media/superior spiderman.jpeg" alt="" />
+      <img src="/Media/superior spiderman.jpeg" alt="" />
+      <img src="/Media/superior spiderman.jpeg" alt="" />
+    </div>
+  </body>
+</html>
