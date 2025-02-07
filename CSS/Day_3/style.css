@@ -88,7 +88,7 @@ h2 {
 
 .nc {
   display: flex;
-  border: var(--border1);
+  /* border: var(--border1); */
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 13px;
@@ -98,19 +98,49 @@ h2 {
 .nc > p:first-child {
   align-self: flex-end;
   flex: 2 1 0;
-  border: var(--border2);
+  /* border: var(--border2); */
 }
 .nc > p:nth-child(2) {
   align-self: flex-end;
   flex: 0.4 1 0;
-  border: var(--border2);
+  /* border: var(--border2); */
 }
 .nc > p:nth-child(3) {
   align-self: flex-start;
   flex: 0 1 0;
-  border: var(--border2);
+  /* border: var(--border2); */
 }
 
 /* NC_SUB SECTION */
+
+.nc_sub{
+    display: flex;
+    /* border: var(--border1); */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.nc_sub >p:first-child{
+    align-self: flex-end;
+    flex: 2 1 0;  
+}
+
+.nc_sub >p:nth-child(2){
+
+}
+
+.nc_sub >p:nth-child(3){
+
+}
+
+/* DAILY VALUE */
+
+.dv{
+    display: flex;
+}
+
+
 
 
