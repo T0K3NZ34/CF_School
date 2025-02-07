@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content Example</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px; /* Set height to see the effect */
+            border: 2px solid black;
+        }
+
+        .item {
+            flex: 1 1 100px;
+            background-color: lightblue;
+            text-align: center;
+            margin: 5px;
+            padding: 20px;
+        }
+
+        .align-start {
+            align-content: flex-start;
+        }
+
+        .align-center {
+            align-content: center;
+        }
+
+        .align-end {
+            align-content: flex-end;
+        }
+
+        .align-space-between {
+            align-content: space-between;
+        }
+
+        .align-space-around {
+            align-content: space-around;
+        }
+
+        .align-space-evenly {
+            align-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h2>Align Content Example</h2>
+
+    <h3>align-content: flex-start</h3>
+    <div class="container align-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h3>align-content: center</h3>
+    <div class="container align-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h3>align-content: flex-end</h3>
+    <div class="container align-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h3>align-content: space-between</h3>
+    <div class="container align-space-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h3>align-content: space-around</h3>
+    <div class="container align-space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h3>align-content: space-evenly</h3>
+    <div class="container align-space-evenly">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>
