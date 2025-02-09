@@ -49,20 +49,52 @@
     <!-- a flex box contains flex items, opposite as what we are used to the flex box puts pur elements in a horizontal position instad of a vertical one  -->
 </body>
 </html>
-<!-- 
-justify-content: Aligns items horizontally within a flex container.
 
-align-items: Aligns items vertically within a flex container.
 
-flex-direction: Defines the direction (horizontal or vertical) in which the flex items are placed in the flex container.
 
-order: Changes the order of the flex items.
+<!-- Understanding Flexbox
 
-align-self: Allows individual items to have different vertical alignment within a flex container.
+A flexbox is a box that allows you to manage the layout of its child elements efficiently. By defining the width of the flexbox, you can control how its child elements are distributed within it.
 
-flex-wrap: Controls whether the flex items should wrap onto multiple lines.
+Example:
 
-flex-flow: A shorthand for setting both flex-direction and flex-wrap.
+css
+.flex {
+    width: 500px;
+}
 
-align-content: Aligns flex lines within a flex container when there is extra space on the cross-axis. e.g. when the content wraps -->
+.item1 {
+    width: 100%; /* This determines how much space the item will take */
+}
+Main Properties of Flexbox
+1. Justify-Content
 
+This property is written on the flexbox itself and not on the items. It aligns the items along the main axis (x-axis for row direction and y-axis for column direction).
+
+2. Align-Items
+
+This property is also applied to the flexbox, not the individual items. It aligns items along the cross-axis (perpendicular to the main axis). For a row direction, this means vertical alignment, and for a column direction, this means horizontal alignment.
+
+3. Flex-Direction
+
+Defines the direction in which the main axis is looking (row, column, row-reverse, or column-reverse).
+
+4. Align-Self
+
+Written on the individual item, this property moves individual items along the cross-axis.
+
+5. Flex-Wrap
+
+Default value is nowrap. It allows items to wrap onto a new line if they don't fit within the flexbox.
+
+6. Flex-Flow
+
+A shorthand property for flex-wrap and flex-direction.
+
+7. Align-Content
+
+Used on the flexbox to align the content when there are multiple lines present vertically.
+
+8. Order
+
+Changes the order of your items (not very useful in most cases). -->
