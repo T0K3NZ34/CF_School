@@ -1,0 +1,93 @@
+*{
+ box-sizing: border-box;
+ margin: 0 auto;
+}
+
+
+.grad{
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid black;
+    background: palegreen;
+    /* background-image:linear-gradient(to bottom right, red 0%, yellow 50%); */
+
+    background-image:repeating-linear-gradient( red 10%, yellow 15%, green 25%);
+
+    /* To be able to use gradients you need a background color for keeping up with any text that might go on top of the img, background-image: type-of-gradient (direction, color1, color2, etc.); using percentages,px,rems,etc. tells you where the color stops and the next one starts */
+
+
+
+    /* Gradients are used for you to make a transition of one colour to another
+    The webkits also called "vendor prefixes" are there for for you to be able to use not css standized functions, elements, properties, etc etc.. on different browsers if your x-thing has not been standized by every browser or the browser has not been updated you have to use this -webkit- AND -moz- etc.
+    
+    If you want to know how to define a property in different browsers look it up
+    */
+}
+
+.rep{
+    border: solid 2px black;
+    width: 50vh;
+    height: 50vh;
+
+    /* NEVER FORGET TO ADD BORDERS WIDTH AND HEIGHT */
+
+    background-color: aquamarine;
+    background-image: url("/Media/superior\ spiderman.jpeg"), url("/Media/logo.png");
+    
+    
+    /* you can insert different img for backgrounds by spacing them with a comma, the comma dictates the order of the img
+    its usefull if the first img doesnt load then you can put a second img as background, or just put them next to eac other if you want numerous img*/
+    
+    /* you can also make the images repeat themselves different times by separating them with a comma */
+
+    /* background-repeat: repeat-x; */
+    /* this will make your image repeat horizontally */
+    
+    /* background-repeat: repeat-y; */
+    /* this will make your image repeat vertically */
+
+    background-repeat: no-repeat;
+    /* this will make your image repeat once */
+    
+    /* background-repeat:fixed; */
+    /* this will make your image stay in the same place no matter the scrolling */
+
+    /* background-repeat: scroll; */
+    /* this will make it so that your image moves to wherever you are scrolling to  */
+}
+
+
+.pos{
+    background-position: center top, center bottom;
+
+    /* also here to give each img a position, just space them with a comma */
+
+    /* this will make it so that you can position your background in different places inside the container */
+}
+
+.shorth{
+    width: 50vw;
+    height: 50vh;
+    border: solid black 2px;
+    background: red url("/Media/superior\ spiderman.jpeg") no-repeat center top;
+
+    /* this is the zencode for background, it goes:  background: background-color "media" repeat position; */
+}
+
+.full{
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid black;
+    background: antiquewhite url("/Media/superior\ spiderman.jpeg") no-repeat;
+    background-size: cover;
+    /* this makes the img cover the whole container */
+
+    /* background-size: auto; */
+    /* this is used when you want your background to be displayed in its original size */
+
+    /* background-size: (units px, rem, etc.) ; */
+    /* use this to resize the image to the wished size */
+
+    /* background-size: contain; */
+    /* this makes the image fully visible on the container */
+}
