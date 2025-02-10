@@ -3,6 +3,14 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
    margin-top: 0;
    margin-bottom: 0; 
+   box-sizing: border-box;
+
+   /*ALWAYS ADD BOX-SIZING BORDER BOX 
+   ALWAYS ADD BOX SIZING BORDER BOX
+   ALWAYS ADD BOX SIZING BORDER BOX 
+   ALWAYS ADD BOX SIZING BORDER BOX 
+   ALWAYS ADD BOX SIZING BORDER BOX 
+    ALWAYS ADD BOX SIZING BORDER BOX */
 }
 
 /* THIS IS YOUR BOX!!! */
@@ -83,6 +91,6 @@ p {
     border: solid 2px blue;
 }
 
-.rems{
+.rems {
   padding-left: 1rem;
 }
