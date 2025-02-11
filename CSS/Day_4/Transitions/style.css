@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.transis{
+    width: 150px;
+    height: 150px;
+    /* this are the initial values of the div */
+    background: lightcyan;
+    border-radius: 5px;
+    transition: width 2s , height 2.5s;
+    transition-timing-function: ease-out;
+    border:solid 2px darkcyan;
+}
+
+div:hover{
+    width: 300px;
+    height: 300px;
+    /* this are the values when the div is hovered */
+}
+/* when doing a transition you want to add the effect and the duration of the effect */
+
+.transform{
+    width: 150px;
+    height: 150px;
+    /* this are the initial values of the div */
+    background: lightcyan;
+    border-radius: 5px;
+    transition: width 2s , height 2.5s;
+    transition-timing-function: ease-out;
+    border:solid 2px darkcyan;
+    text-align: center;
+}
+
+.transform:hover{
+    /* transform: translate(40%, 40%); */
+    /* translate will move our element, to the x-value and then to the y-value, negative values will move the element to the left and up */
+
+    /* transform: rotatex(45deg); */
+    /* this will rotate along the x axis */
+
+    /* transform:rotatey(45deg); */
+    /* this will rotate along the y axis */
+
+    /* transform: rotateZ(45deg); */
+    /* this will rotate it like a car wheel */
+
+    /* transform: skew(40deg); */
+    /* this will rotate the image on the x or why y or both axis to make it look like a idk look it uf` */
+
+    /* transform: scale(xyz); */
+    /* the same thing applies here as for sizing, you just put how much you want them to srink or strech to */
+}
+
