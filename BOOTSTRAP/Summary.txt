@@ -1,0 +1,56 @@
+Bootstrap is a tool made for webdevelopers to be able to creae quick and good looking websites
+
+To be able to use bootstrap at all you have to either download the files and link tem to your project if you are working offline or you can use their link for you to be able to use their stuff only when being connected to the internet!!!
+
+it is very important that whatever you do youll  be following this order:
+
+****
+<div class="container">
+
+here comes whatever you are trying to create at the moment!!
+
+</div>
+****
+
+
+Since its almost impossible to remember everything its a good idea to look stuff up if you cant keep going forward ther is always a solution!!
+
+
+The data-bs-xyz attribute help you making the buttons work, makes the screenreaders tell the person what the button does, and also you can tell the button what to target when using the button 
+
+Very important things!!
+
+1. Layout and Grid System
+Bootstrap's responsive grid system divides the screen into 12 columns.
+
+2. Typography
+Bootstrap provides various typography options for headings, paragraphs, blockquotes, and more.
+
+3. Components
+Buttons: Various styles and sizes.
+
+Navbars: Responsive navigation bars.
+
+Cards: Flexible content containers.
+
+Forms: Standardized form controls.
+
+Alerts: Contextual feedback messages.
+
+4. Utilities
+Bootstrap includes various utility classes for spacing, alignment, colors, and more.
+
+Spacing: Adjust margins and padding.
+
+Colors: Easily change text and background colors.
+
+Flexbox: Utilities for working with the flexbox layout model.
+
+5. Responsive Design
+Bootstrap is designed to be responsive, adapting to different screen sizes using breakpoints (sm, md, lg, xl, xxl).
+
+6. JavaScript Plugins
+Bootstrap comes with several JavaScript plugins for interactive components such as modals, carousels, tooltips, popovers, and more.
+
+7. Icons
+Bootstrap includes a library of icons that can be easily integrated into your projects.

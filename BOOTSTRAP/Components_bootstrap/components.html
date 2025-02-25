@@ -37,6 +37,7 @@
       <!-- the role is therefor to make screen readers be acble to tell that taths an alert -->
     </div>
 
+        
     <div class="container">
       <div class="card-group">
         <!-- The card-group class will make it so that our cards are aligned horiozontally and stick next to another -->
@@ -51,13 +52,28 @@
           <div class="card-body">
             <!-- by using the class card-img-overlay we are gonna be able to put the pickture in the background of our card -->
             <h1 class="card-title">This shit</h1>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              iure architecto, tempore libero sunt tenetur? Obcaecati in
+              doloribus, inventore cumque voluptatibus voluptate eligendi qui
+              porro nobis libero eos ipsum eaque, exercitationem illum impedit
+              amet laborum harum quo perspiciatis cum, minima molestiae
+              consequuntur! Quasi veritatis, accusantium repellendus ullam
+              architecto animi quia.
+            </div>
+          </div>
+        </div>
+      <div class="card" style="width: 600px; background-color: bisque">
+        <div class="card-header">LOL</div>
+        <div class="card-body">
+          <h1 class="card-title">This shit</h1>
+          <div class="card-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            iure architecto, tempore libero sunt tenetur? Obcaecati in
-            doloribus, inventore cumque voluptatibus voluptate eligendi qui
-            porro nobis libero eos ipsum eaque, exercitationem illum impedit
-            amet laborum harum quo perspiciatis cum, minima molestiae
-            consequuntur! Quasi veritatis, accusantium repellendus ullam
-            architecto animi quia.
+            iure architecto, tempore libero sunt tenetur? Obcaecati in doloribus,
+            inventore cumque voluptatibus voluptate eligendi qui porro nobis
+            libero eos ipsum eaque, exercitationem illum impedit amet laborum
+            harum quo perspiciatis cum, minima molestiae consequuntur! Quasi
+            veritatis, accusantium repellendus ullam architecto animi quia.
           </div>
         </div>
       </div>
@@ -65,27 +81,18 @@
         <div class="card-header">LOL</div>
         <div class="card-body">
           <h1 class="card-title">This shit</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          iure architecto, tempore libero sunt tenetur? Obcaecati in doloribus,
-          inventore cumque voluptatibus voluptate eligendi qui porro nobis
-          libero eos ipsum eaque, exercitationem illum impedit amet laborum
-          harum quo perspiciatis cum, minima molestiae consequuntur! Quasi
-          veritatis, accusantium repellendus ullam architecto animi quia.
+          <div class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            iure architecto, tempore libero sunt tenetur? Obcaecati in doloribus,
+            inventore cumque voluptatibus voluptate eligendi qui porro nobis
+            libero eos ipsum eaque, exercitationem illum impedit amet laborum
+            harum quo perspiciatis cum, minima molestiae consequuntur! Quasi
+            veritatis, accusantium repellendus ullam architecto animi quia.
+          </div>
         </div>
       </div>
-      <div class="card" style="width: 600px; background-color: bisque">
-        <div class="card-header">LOL</div>
-        <div class="card-body">
-          <h1 class="card-title">This shit</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          iure architecto, tempore libero sunt tenetur? Obcaecati in doloribus,
-          inventore cumque voluptatibus voluptate eligendi qui porro nobis
-          libero eos ipsum eaque, exercitationem illum impedit amet laborum
-          harum quo perspiciatis cum, minima molestiae consequuntur! Quasi
-          veritatis, accusantium repellendus ullam architecto animi quia.
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
 
     <div class="container">
       <button
@@ -97,14 +104,18 @@
       </button>
       <div class="modal fade" id="modal">
         <!-- we can also change the size of the modal by adding modal-lg or sm or md -->
-         <!-- we can also add some breakpoints like this: <div class="modal fade modal-fullscreen-lg"></div> this will only make the modal fullscreen when the screensize is the size large an above -->
+        <!-- we can also add some breakpoints like this: <div class="modal fade modal-fullscreen-lg"></div> this will only make the modal fullscreen when the screensize is the size large an above -->
         <div class="modal-dialog modal-dialog-scrollable">
           <!-- the scrollable class make it possible for yor content to be scrollable inside of the modal itself when the content is to long -->
-          
+
           <div class="modal-content">
             <div class="modal-header">
               <h1>Header</h1>
-              <button class="btn-close" data-bs-dismiss="modal" data-bs-target="#modal"></button>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                data-bs-target="#modal"
+              ></button>
               <!-- Any button added that we want it to close the modal neds to have the: data-bs-dismiss="" attribute and then the: data-bs-target="" to tell the button what to close -->
             </div>
             <div class="modal-body">
@@ -118,6 +129,60 @@
       </div>
     </div>
 
+    <div class="container">
+      <button
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        data-bs-target=".row"
+        aria-expanded="false"
+        aria-controls="row"  
+      >
+      <!-- Adding the .row to the rtarget will make it possible to toggle many row at once as long ass the rows have the same class -->
+      <!-- aria controls makes it easier for screenreaders to know that the button is controlling the row div -->
+        Toggle
+      </button>
+      <div class="row collapse">
+        <div class="col">
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="col">
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="col">
+          <div class="box"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- THE NAVBAR DOESNT GO IN A CONTAINER IT GOES OUTSIDE OF THE CONTAINER -->
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(7, 50, 35);">
+      <!-- nav bar expand is for you r icons to be across the nav bar when the screen (in this case ) reaches md size  when this is not used the items will stack vertically on top of each other-->
+      <div class="container">
+        <a href="" class="navbar-brand">Brand</a>
+        <!-- this is usually the logo or brand text -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navi" aria-controls="#navi" aria-label="expand navigation">
+          <!-- WE NEED THE DATA BS TO MAKE OUR BUTTONS DO THINGS!!! TOGGLE IS THE ACTION, TARGET IS WHAT IS PERFORMING THE ACTION AND ARIA IS FOR THE SCREENREADERS TO KNOW WHAT ITS TARGETING AND ARIA LABEL IS FOR SCREENREADER TO TELL WHAT THE BUTTON DO -->
+          <span class="navbar-toggler-icon"></span>
+          <!-- this is the common three lines icon  -->
+        </button>
+        <div class="collapse navbar-collapse" id="navi">
+          <!-- collapse makes it possible for our navbar to disapear and be able to toggle -->
+          <ul class="navbar-nav">
+            <!-- we have to identify our navigation items with the nav-item class as well as identify them being links if necessary -->
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
