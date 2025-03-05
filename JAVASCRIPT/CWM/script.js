@@ -6,7 +6,7 @@ let pi = 3.14; //it still is a number
 const dog = "dog"; //const is ther to hardcode a value
 console.log(30 + age);
 
-//dog = "cat";//this is ot possible
+//dog == "cat";//this is ot possible
 console.log(name1);
 // console.log(name1 + " " + name2);
 // console.log("hello i am"+" " + name1 +" "+ name2);

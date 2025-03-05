@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Javascript</title>
+  </head>
+  <body>
+    <script>
+      //Doc write is used for quick testing, later on wel be learninf about optimal was to display stuff on the wepage
+
+      let named = "Nina";
+      document.write(named);
+
+      let numbr = 10.5;
+      document.write(numbr);
+
+      //Creating an user prompt, prompt is there ofor the user to type a value
+      //   let username = prompt('What is your name');
+      //   document.write('Hello! '+ username);
+
+      //Mathematical operators
+      //Java script can do mathematical equations with no problem at all
+      console.log(1 + 2);
+      console.log(2 - 1);
+      console.log(36 / 3);
+      console.log(5 * 8);
+      console.log(11 % 3);
+      console.log(9 % 3);
+      //  this % is the reminder of the divition of 6/9
+
+      let points = 10;
+      // points = points + 5;
+      // console.log(points);
+
+      //ASSIGMENT OPERATORS
+      //there are more practical ways to points = points + 5;
+      points += 5;
+      console.log(points);
+      //this can be done with all mathematical operators
+
+      // INCREMENT AND DECREMENT OPERATORS
+      //This will only increment the value + or - 1
+    //   let level = prompt("numberrrr");
+    //   level++;
+      // level--;
+    //   console.log(level);
+
+      //Type Conversions
+      // Java script will change the type of the value depending on what it is expecting
+
+      let islatetowork = "hello";
+      console.log(typeof islatetowork);
+    
+      let lol=3;
+      console.log(typeof lol);
+      
+    //   Java will display NaN (Not-a-Number) if it cant perform a meaningful convertion
+        let score= '4' - 'hello';
+        console.log(score);
+
+    //In case we want to define a variable type we can use the javascript conversion buit in methods
+
+    let firstal = '10';
+    console.log(typeof firstal);
+
+    let newval = Number(firstal);
+    console.log(typeof newval);
+
+    // E.G usage
+    //here we need to make our variable a number to be able to substract the byear
+    let byear = Number(prompt("what is your birth year"));
+    console.log('you are '+(2025 - byear)+' years old');
+
+    // we can also write a + before the b or now wyear to tell the server that wyear is a number
+
+    let wyear =(prompt("what is your birth year"));
+    console.log('you are '+(2025 - +wyear)+' years old');
+    //same can be done from numbers to strings
+
+
+
+    // String Concatenation
+    //this means using ,ultiple strings to make a big one
+
+    let fname= 'Jorge ';
+    let lname= "De la Torre"
+    let fullname= fname + lname;
+    console.log(fullname);
+
+    //you can write whole templates for them to be displayed by using `` and ${} to display the variable
+
+    console.log(`Hello my name is ${fullname}`);
+
+    //Length
+    //you can look for the length of characters on a string
+    console.log(fullname.length);
+
+    //you can also make it lower or uppercase
+    console.log(fullname.toUpperCase());
+    console.log(fullname.toLowerCase());
+    
+    //you can look for the position of the first occurrence of a certain character on you string aswell
+
+    console.log(fullname.indexOf('T'));//it is lower and uppercase sensitive, this means if you have a lowercase t it will display -1 as well
+    console.log(fullname.indexOf('K'));//if the character doesnt exist in the string then it wioll display -1
+
+    //you can also check for the character on an idex number
+    console.log(fullname.charAt(3));
+    
+
+    //SUBSTRING
+    //you can get the console to display only a part of the string by using .substring(start point, end point)
+
+    console.log(fullname.substring(2, 17));//the indexof a string starts with 0!!
+    
+    //SPLIT
+    //you can split your strings in to substrings by using 
+    // .split(after which character split)
+    console.log(fullname.split(" "));
+    
+    
+    //we can chain different operators like this
+    console.log(fullname.split(" ").reverse().join());
+    //this reverses the string and also makes a new string with commas in between where we split stuff
+    
+
+    
+
+    
+    
+        
+    </script>
+  </body>
+</html>
