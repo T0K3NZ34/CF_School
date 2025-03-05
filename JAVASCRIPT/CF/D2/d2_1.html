@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D2</title>
+  </head>
+  <body>
+    <script>
+      //Contitionals
+
+      //If- else statements
+
+      let age = 20;
+
+      if (age >= 18) {
+        console.log("You are allowed to enter");
+      } else {
+        console.log("You are not allowed in");
+      }
+
+      //Comparation OPERATORS
+      // with "=" this sets a value
+      // with "==" this checks if the value
+      // with "===" this checks the value and type
+      // with "!=" this checks if the value is NOT EQUAL TO
+      // with "<" this ckecks if its less than
+      // with this ">" this checls if its more than
+      // "<=" less or equal to
+      // ">=" bigger or equal to
+
+      //LOGICAL OPERATORS
+      // "&&" this means "and"
+      // "||" this means "or"
+      // "!" this means "NOT"
+
+      let temperature = 2;
+      let isSunny = true;
+
+      if (temperature >= 20 && isSunny) {
+        console.log("what a wonderful weather");
+      } else if (temperature < 20 && !isSunny) {
+        console.log("what a bad day");
+      } else if (temperature < 20 && isSunny) {
+        console.log("Could better");
+      }
+
+      //Switch satemets
+      // instead of writing many ifs you can just makea  switch statement and put all teh cases it will cover inside of it
+      // The break keyword tells the computer to stop looking for further cases once a match is found, if you dont put break it will continue looking
+
+      let day = "moday";
+
+      switch (day) {
+        case "monday":
+          console.log("start of the week");
+          break;
+
+        case "tuesday":
+          console.log("second day of the week");
+
+          break;
+
+        case "friday":
+          console.log("lesgooo");
+
+          break;
+      }
+
+      // FUNCTIONS
+      // A function is a reusable block that you can define as many times as needed, it can take inputs, perform specoific tasks and sometimes give back a result.
+      //for exampple if you need to do the same equation many times in your code but with different numbers you can do this:
+      function addnumers(x, y) {
+        console.log(x + y);
+      }
+      console.log(addnumers(2, 4));
+
+      function greeting(x) {
+        console.log(`hello there ${x}`);
+      }
+      greeting(prompt("What is your name?"));
+
+      //the return statement makes sends a value back to where it was called and i stops immediately
+      function groot() {
+        return "im happy to be hereee helooooo";
+      }
+      console.log(groot());
+
+      //Arguments
+      function product(name, price) {
+        console.log(`Product: ${name} it costs $${price}`);
+      }
+      console.log(product("bread", 2.99));
+
+      //Returning multiple values
+      function getresult(n1, n2, n3) {
+        let sum = n1 + n2 + n3;
+        let mult = n1 * n2 * n3;
+        let result = [sum, mult];
+        return result;
+      }
+      console.log(getresult(1, 1, 1)[0]);
+      //getresult(n1, n2, n3)[what element of result are we choosing to use]
+
+
+
+
+      //ARROW FUNCTION
+      //arrow functions remove the need of writing function to create a function, imnstead we use this:
+      // const x(x is for te name of our function)= () => {}   
+
+      const suma = (x,y) => {
+        return x + y;
+      }
+      console.log(suma(1,1));
+
+
+      //Variable SCOPES LOCAL AND GLOBAL
+
+      //A global scope is a variable that its created outside of a funtion and can be calle at any time
+      //A local scope is a variable that is declared inside od a function
+      
+     </script>
+  </body>
+</html>
