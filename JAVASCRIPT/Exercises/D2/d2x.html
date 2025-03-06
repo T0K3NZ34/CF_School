@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D2 ex</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "banana", "orange", "grape"];
+      console.log(fruits);
+      console.log(fruits.length);
+
+      let players = ["Martin", "Mathias", "Peter", "Thomas", "Niki"];
+      console.log(`The MVP of this match is ${players[2]}`);
+
+      // function crystalGazer(nc, pn, wl, jb){
+      //     console.log(`You will be a ${jb} in ${wl}, and married to ${pn} with ${nc} kids.`);
+      // }
+
+      // crystalGazer(prompt("what is your fave number"), prompt("who do you like rn?"), prompt('Where would you like to live?'), prompt('what is your dream job?'));
+
+      /////////////////
+
+      let frutas = ["manzana", "platano", "Kiwwi", "mango", "pera"];
+
+      frutas.push("orange");
+      console.log(frutas);
+
+      frutas.shift();
+      console.log(frutas);
+
+      frutas.unshift("manzana");
+      frutas.pop();
+      console.log(frutas);
+
+      frutas.splice(0, 1, "fresa");
+      console.log(frutas);
+
+      //////////////////////
+
+      let animals = ["monkey", "horse", "dog", "elephant", "giraffe"];
+
+      animals.shift();
+      console.log(animals);
+
+      animals.unshift("cat");
+      console.log(animals);
+
+      animals.pop();
+      console.log(animals);
+
+      animals.push("tiger");
+      console.log(animals);
+
+      animals.sort().reverse();
+      console.log(animals);
+
+      //////////////////////
+
+      let people = ["Greg", "Mary", "Devon", "James"];
+
+      people.shift();
+      people.unshift("Matt");
+      people.pop();
+      people.push("Jorge");
+
+      people.slice(0, 2, 2);
+      console.log(people.indexOf("Mary"));
+      console.log(people.indexOf("Foo"));
+
+      people = ["Greg", "Mary", "Devon", "James"];
+
+      people.splice(2, 1, "Elizabeth", "Anna");
+      console.log(people);
+
+      /////////////////////
+
+      //  function agecalculator(byear){
+      //     let age= 2025-byear;
+      //     return age;
+      //  }
+
+      //  console.log(`You are ` + agecalculator(prompt(`What is yor birth year?`))  + ` years old`);
+
+      ////////////////////
+
+    //   function grades(math, english, physics) {
+    //     let finalgrade = (math + english + physics) / 3;
+    //     return finalgrade;
+    //   }
+    //   console.log(
+    //     `your avarage grade is ` +
+    //       grades(
+    //         +prompt(`What was your grade in math? 1-5`),
+    //         +prompt(`What was your grade in english? 1-5`),
+    //         +prompt(`What was your grade in physics? 1-5`)
+    //       )
+    //   );
+
+      //PROMPT RETURNS A STRING, WE NEED NUMBERS TO BE ABLE TO MAKE EQUATIONS!!! we convert the strings into numbers by puting a "+" before the prompt!!
+
+      ////////////////////
+
+      function evenorodd(number){
+        if (number % 2 === 0){
+            //here i use the % because if the remider of the division i 0 then it means the number is even!!
+            document.write(`The number is even!`);
+        } 
+        else{
+            document.write(`The number is odd!`); 
+        }
+      }
+      console.log(evenorodd(+prompt(`Tell me a number`)));
+
+    </script>
+  </body>
+</html>
