@@ -34,7 +34,49 @@
             b--;
         } while (b>=1);
         document.write(`boom`);
+
+
+
+        //The break and the continue words
+
+        //'break' stops the loop completely 
+        //'continue' skips the ret of the current iteration and moves to thenext one
+
+        for (let j = 0; j <=10; j++) {
+            if (j===5) {
+                continue; //this skipps the number five
+            }
+            if (j===11) {
+                break; //this stops the code completely
+            }
+            console.log(j);
+               
+        }
+        console.log(`you have reachd the number ten and skipped the number 5!`);
+
+
+        //looking through arrays
+
+        //for...of
+
+        let colors=['red','blue', 'yellow'];
+
+        for (let color of colors ){
+            console.log(color);
+        }
+        //the for of loop goes trough every eklement of the array on by one and there is no conditons that have to be given
+
+
+        //.forEach() method is another way to loop trough the array, we canalso use this if we need to know the index of every item
         
+        const animals = ['cat', 'dog', 'rabbit'];
+
+        animals.forEach( function(animal, index) {
+        console.log(index + ': ' + animal); // Prints the index and the animal
+        });
+
+
+        //USE FOR..OF WHEN YOU ONLY ARE WORKING WITH THE ELEMENTS OF THE ARRAY AND USE .FOREACH() WHEN YOU NEED THE ITEM AND THE IDEX
     </script>
 </body>
 </html>
