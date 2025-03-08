@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //OBJECTS
+
+        //in java script most things are objects of some kind , exept primitives (sting, number, boolean, null and undefined) are objects
+        //person example: imagine the person is an object, it has its attributes like a name a last name and the method is what he does in this case a person can speak
+
+        let person = { //Object
+            firstname:'Jorge', //Properties
+            lastname:'De la Torre', //Properties
+            age:25,//Attriburtes
+            drivingLicence: true, //Properties
+            hobbies:['Ball', 'Music', 'Read'], //Properties
+            greeting: function(){ //Method
+                console.log(`hello my name is Jorge`);
+                
+            }
+        };
+
+        //this is how you create an object with many properties:
+        // let nameofthevariable ={
+            //here goes all of its properties no ''='' needed 
+            //instead you do this: propertyone:21,
+            //you use the "," to separate poperties      
+        //}; you close your object with a ";"
+        console.log(person);
+
+        //ACCSESSING PROPERTIES
+        //to be able to accsess them we just need to put a ".'the poperties name'"
+
+        console.log(person.firstname);
+        //when you access an array you can also look for an specific index like this
+        console.log(person.hobbies[2]);
+        
+        //ACCSESSING METHODS
+        //for this you dont need to console log the greeting you just do it like this
+        person.greeting();
+        
+        // MODIFYING PROPERTIES
+        //in orther to modify a property we can just do it as always
+        person.age=31;
+        console.log(person.age);
+        
+        //ADDING PROPERTIES
+        //wecan also add properties like by writing the variable name and the new property 
+        person.gender='male';
+        console.log(person);
+        
+        //FOR...IN loop
+        //the for in loop loops trough the properties of an object
+
+        let objeto={
+            numerop:1,
+            numeros:2, 
+        };
+        for (let prop in objeto ) {
+            console.log(prop + objeto[prop]);
+            //use the objeto[] to look into the value of the properrties aswqell
+        }
+
+    </script>
+</body>
+</html>

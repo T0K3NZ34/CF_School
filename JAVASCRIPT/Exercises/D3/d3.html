@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let numbers = [
+      //     +prompt(`give me a number`),
+      //     +prompt(`give me a number`),
+      //     +prompt(`give me a number`),
+      //   ];
+      //   //we promp the user to give us numbers to compare
+
+      //     let highestval = numbers[0];
+      //     //we create a the variable thats gonna assume the highest value
+
+      //     for(i= 0; i < numbers.length; i++){//we create a variable that is going to go trough the array compare if the number given are bigger or smaller than the highestval variable
+      //         if (i>highestval) {
+      //             highestval= numbers[i];
+      //             //if the i variable is bigger than our current highestval variable then out highval is gonna to assume the value of wherever the i is
+      //         }
+      //     }
+      //     document.write(highestval);// we print the result on the document
+
+      //temperature
+
+      let mint = -5;
+      let maxt = 25;
+
+      let tempnow = Math.floor(Math.random() * (maxt - mint + 1) + mint);
+      //we have to multipy the random with the maxt-mint + 1 to get the amount of numbers random can chose from, we add then the mint to set the starting point
+      if (tempnow >= -5 && tempnow <= 10) {
+        console.log(`The weather is cold`);
+      } else if (tempnow > 10) {
+        console.log(`The weather is moderate`);
+      }
+      console.log(tempnow);
+
+      //Avarage Grade of the students
+
+      let students = {
+        Martin: [76, 64, 81, 57, 94],
+        Thomas: [85, 49, 81, 72, 55],
+        Klaus: [65, 91, 84, 67, 85],
+        Maria: [93, 70, 81, 64, 84],
+        David: [81, 99, 71, 100, 69]
+      };
+        
+      function getgrade(){
+        fgrade= /5
+        return fgrade;
+      }
+      
+      let letter = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+      // function finalgrade(name) {
+      //   let average = name / .length;
+      //   return average;
+      // }
+
+      let avagrade = prompt(
+        `Which student's grade would you like to see? Martin, Thomas, Klaus, Maria, David`
+      );
+
+      if (avagrade !== "Martin" || "Thomas" || "Klaus" || "Maria" || "David") {
+        document.write(`Student not found!`);
+      } else if (avagrade === "Martin") {
+        document.write(finalgrade);
+        document.write(`He has a ` + letter);
+      } else if (avagrade === "Klaus") {
+        document.write(finalgrade);
+        document.write(`He has a ` + letter);
+      } else if (avagrade === "Maria") {
+        document.write(finalgrade);
+        document.write(`She has a ` + letter);
+      } else if (avagrade === "Thomas") {
+        document.write(finalgrade);
+        document.write(`He has a ` + letter);
+      } else if (avagrade === "David") {
+        document.write(finalgrade);
+        document.write(`He has a ` + letter);
+      }
+    </script>
+  </body>
+</html>

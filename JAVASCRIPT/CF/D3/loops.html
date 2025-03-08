@@ -64,7 +64,7 @@
         for (let color of colors ){
             console.log(color);
         }
-        //the for of loop goes trough every eklement of the array on by one and there is no conditons that have to be given
+        //the for of loop goes trough every element of the array on by one and there is no conditons that have to be given
 
 
         //.forEach() method is another way to loop trough the array, we canalso use this if we need to know the index of every item
@@ -76,7 +76,60 @@
         });
 
 
+
         //USE FOR..OF WHEN YOU ONLY ARE WORKING WITH THE ELEMENTS OF THE ARRAY AND USE .FOREACH() WHEN YOU NEED THE ITEM AND THE IDEX
+
+
+
+        //Math Objects
+
+        //math.pi  a costatnt that represents the number of pi
+        //math.random()  returns a floating-point number between 0 and 1
+        //math.round(x) round the number x to the nearest int 
+        //math.floor(x) rounds the x numbert down to he nearest int 
+        //math.ceil(x) reunds the number x towards the nearest int towards posibly infinite
+        //math.max(a,b,..,) returns the largest number from the given argument
+        //math.min(a,b,..,)  returns the smallest number from the givem argument
+        //math.sqrt(x) returns the squareroot of x
+
+
+        let randomnumber= Math.random()*3; // the *something is the max number you can get when using this object you wont get in this case 2 but maybe 2.99999999
+        console.log(randomnumber); //random decimal number between 0 and 10 not including 10 
+        
+        let mathfloor= Math.floor( Math.random()*10 +1); //floor will round the nmber down to the neares int, we use the math.random to get a number again
+        console.log(mathfloor);                       //for us to be able to get a number between 0 and 10 with ten as an option to get we add a +1 after the ten
+        
+        
+        let min =30;
+        let max = 60;
+
+        let rnumber = Math.floor(Math.random()*(max - min +1) +min);
+        //the formula goes as follows: we need floor to get a whole int, we need random to generate a random number,the Math.random gets multiplied by the max-min +1 to give us the amount of numbers between our min and max including the min itself and then we add the min to set it as our start number; 
+        console.log(rnumber);
+
+
+
+        //DATE OBJECT
+
+        //getDate() gets you the day and the month from  1-31
+        //getMOnth() gets you the the month from 0-11 0 being january and 11 being december
+        //getFullyear() gets you the current year
+        //getHours() gets you the hours from 0 to 23
+        //getMinutes() gets you the minutes from 0 to 59
+        //getSeconds() gets you the seconds from 0 to 59
+        //getTime() gets the time in miliseconds
+        //SetDate Sets the day on the month from 1 to 31
+        //setMonth sets the moth from 0 being january to 11 being december
+        //setFullFear() sets teh full year date e.g 2025
+        //setMinutes() sets the minutes from 0 to 59
+        //SetSeconds() sets the seconds form 0 to 59
+        //toDateString() converts the date object into a readable date string e.g "Wed Dec 5"
+        //toLogaleDateString() 
+        
+
+        let currentdate = new Date(); //Date here is a constructor
+        console.log(currentdate);
+        
     </script>
 </body>
 </html>
