@@ -41,48 +41,162 @@
 
       //Avarage Grade of the students
 
-      let students = {
-        Martin: [76, 64, 81, 57, 94],
-        Thomas: [85, 49, 81, 72, 55],
-        Klaus: [65, 91, 84, 67, 85],
-        Maria: [93, 70, 81, 64, 84],
-        David: [81, 99, 71, 100, 69]
-      };
-        
-      function getgrade(){
-        fgrade= /5
-        return fgrade;
-      }
-      
-      let letter = ['A', 'B', 'C', 'D', 'E', 'F'];
+    //   let students = [  //I create an arra with other arrays that content the grades of the students
+    //     [76, 64, 81, 57, 94],
+    //     [85, 49, 81, 72, 55],
+    //     [65, 91, 84, 67, 85],
+    //     [93, 70, 81, 64, 84],
+    //     [81, 99, 71, 100, 69],
+    //   ];
 
-      // function finalgrade(name) {
-      //   let average = name / .length;
-      //   return average;
+    //   let Martin = students[0]; //I create variables with the name of the students and assigning each its index position
+    //   let Thomas = students[1];
+    //   let Klaus = students[2];
+    //   let Maria = students[3];
+    //   let David = students[4];
+
+    //   function gradesum(sn) {
+    //     let sum = 0;
+        
+    //     for (let i = 0; i < sn.length; i++) {
+    //       sum += sn[i];
+    //     }
+    //     let fsum = sum / sn.length;
+    //     //I create a function that sums the grades of the wished student together and divide it by the number of grades to get the avarage grade 
+
+    //     let letter = '';
+    //     if (fsum < 60) {
+    //       letter = "F";
+    //     }
+    //     if (fsum < 70 && fsum > 60) {
+    //       letter = "D";
+    //     }
+    //     if (fsum < 80 && fsum > 70) {
+    //       letter = "C";
+    //     }
+    //     if (fsum < 90 && fsum > 80) {
+    //       letter = "B";
+    //     }
+    //     if (fsum < 100 && fsum > 90) {
+    //       letter = "A";
+    //     }
+
+    //     //I createa a new variable that changes its letter depending on the result of the summ of the students grades
+    //     return [fsum, letter];
+    //     //I return the fsum (final sum) and the letter as an array that i can access later!!!
+    //   }
+
+    //   let avagrade = prompt("Which average note would you like to see? Martin, Thomas, Klaus, Maria, David");
+    //   //I promp the user to write in one of these names!!
+      
+      
+      
+    //   if (["Martin", "Thomas", "Klaus", "Maria", "David"].includes(avagrade)){ //include() checks if a particular element is present in an arrray, in this case i include the names and avagrade inside the round braces to check if the names are present or not
+    //   let studentgrades;
+    //   switch (avagrade) {
+    //     case 'Martin':
+    //         studentgrades = gradesum(Martin);
+    //       break;
+    //     case 'Thomas':
+    //       studentgrades = gradesum(Thomas);
+    //       break;
+    //     case 'Klaus':
+    //       studentgrades = gradesum(Klaus);
+    //       break;
+    //     case 'Maria':
+    //       studentgrades = gradesum(Maria);
+    //       break;
+    //     case 'David':
+    //       studentgrades = gradesum(David);
+    //       break;
+    //   }
+    //   document.write(`Average note: ${studentgrades [0]}`);
+    //   document.write(`<br> Letter Grade: ${studentgrades[1]}`);
+    // }
+    //   else{
+    //     //if the user uses anything else than those names then it will print out this:
+    //     document.write(`Student not found`);
+    //   }
+    ///////
+
+
+      // let j =0;
+      // while (j <= 100) {
+      //   if (j%5===0 && j%3===0) {
+      //     document.write(`FIZZBUZZ`);
+      //   }
+      //   else if (j%3===0) {
+      //     document.write(`FIZZ`);
+      //   }
+      //   else if (j%5===0){
+      //     document.write(`BUZZ`);
+      //   }
+      //   else{
+      //   document.write(j + '<br>');
+      //   }
+      //   j++;
       // }
 
-      let avagrade = prompt(
-        `Which student's grade would you like to see? Martin, Thomas, Klaus, Maria, David`
-      );
+      ////
 
-      if (avagrade !== "Martin" || "Thomas" || "Klaus" || "Maria" || "David") {
-        document.write(`Student not found!`);
-      } else if (avagrade === "Martin") {
-        document.write(finalgrade);
-        document.write(`He has a ` + letter);
-      } else if (avagrade === "Klaus") {
-        document.write(finalgrade);
-        document.write(`He has a ` + letter);
-      } else if (avagrade === "Maria") {
-        document.write(finalgrade);
-        document.write(`She has a ` + letter);
-      } else if (avagrade === "Thomas") {
-        document.write(finalgrade);
-        document.write(`He has a ` + letter);
-      } else if (avagrade === "David") {
-        document.write(finalgrade);
-        document.write(`He has a ` + letter);
+      // r = +prompt(`how many degrees you want to convert into radiants?`);
+
+      // function convertion(r) {
+      //   conv = r * (Math.PI/180);
+      //   return conv;
+      // }
+      // console.log(`${r} degrees equals to ${convertion(r)} radiants`);
+      ////
+
+
+      let currentdate = new Date(); 
+      //we gert the current date by using the date object!1
+
+      let year = currentdate.getFullYear(); //we extract the year
+      let month = currentdate.getMonth() + 1; //we extract the month
+      let day = currentdate.getDay(); //we extract the day
+
+      let formatteddate = `${day}-${month}-${year};`; //this is how our date will be displayed
+
+      document.write(`Todays date is ${formatteddate}`); //Displaying the date on the website
+
+      if(month>=1 && month <= 6){
+        alert(`You are on thte first half of the year!!`);
+      }                                                   //we create the if statements 
+      else{                                               //alert to make a pop up on the screen!
+        alert(`You are on the second half of the year!!`);
+
       }
+      
+      ////
+
+      let sportscar ={
+        modell: 7,
+        brand: 'porshe',
+        modelled: 'spectre',
+        colors:['silver', 'white', 'black'], 
+      };
+      //i created an object with its properties and closed it with ;
+
+      sportscar.modell=8;
+      sportscar.colors.push = ['blue'];
+      //I changed the values of the properties of the object
+
+      console.log(sportscar);
+      ///
+
+      function convertmin(min){
+        let hours = Math.floor(min/60); //floor will gives us a full integer that is less and close to the number given
+        let minutes = min % 60; //the rest of the minutes
+        return `${min} minutes = ${hours} hours and ${minutes} minutes!!`
+      }
+      console.log(convertmin(200));
+      
+      ///
+      for(i = 1; i<= +prompt(`how many stores pyramid`); i++){
+        console.log('*'.repeat(i)); //repeat repeats whathever you put before an () ammount of times!!
+      }
+      
     </script>
   </body>
 </html>
