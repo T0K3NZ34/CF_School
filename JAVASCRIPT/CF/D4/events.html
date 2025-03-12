@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="submit" id="demo" />
+    <script>
+      function showmessage() {
+        document.write("hello there");
+      }
+
+      let demo = document.getElementById("demo");
+      // demo.onclick = showmessage;
+      demo.addEventListener("click", showmessage, false);
+
+      //In order to create an event there are a couple of things i have to take into consideration
+
+      //in this case i have to give the button an id to recall it in my java code later on
+      //then you select the id in js, create a function that does something and then the event happens
+      // .addEventListener is a great way to react to the triggering of an event
+      // .addEventListener('the action', what function is going to run when it happens, just set it to false )
+
+      //click
+      // Triggered when the mouse is clicked (both mouse button presses).
+
+      // dblclick
+      // Triggered when the mouse is double-clicked.
+
+      // mousedown
+      // Triggered when a mouse button is pressed down on an element.
+
+      // mouseup
+      // Triggered when a mouse button is released after being pressed down.
+
+      // mouseover
+      // Triggered when the mouse pointer enters the element's area.
+
+      // mouseout
+      // Triggered when the mouse pointer leaves the element's area.
+
+      // mousemove
+      // Triggered whenever the mouse moves over an element.
+
+      // mouseenter
+      // Triggered when the mouse pointer enters the element, but does not trigger for child elements.
+
+      // mouseleave
+      // Triggered when the mouse pointer leaves the element, but does not trigger for child elements.
+
+      // wheel
+      // Triggered when the mouse wheel is used (scrolling).
+
+      // keydown
+      // Triggered when a key is pressed down.
+
+      // keyup
+      // Triggered when a key is released.
+
+      // keypress
+      // Triggered when a key is pressed and held down (deprecated in modern browsers).
+    </script>
+  </body>
+</html>
