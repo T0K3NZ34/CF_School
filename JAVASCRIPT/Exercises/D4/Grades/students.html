@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="gradeDisplay"></h2>
+
+    <script>
+      let out = document.getElementById("gradeDisplay");
+      //I select the gradedisplay id of my html document
+
+      let students = ['john', 'jane'];
+      let mathGrades = [80, 100];
+       //i create two strings holding the students names and also their grades
+      let student = prompt(
+        "Enter a name:\n(john, jane)"
+      ).toLowerCase();
+        //I ask the user to out the name of a student to see how many points it reached and however the uset puts it it will be converted into lower case
+      if (students.indexOf(student) >= 0) {
+        //If the students name is found the index will be a positive number
+        let grade = mathGrades[students.indexOf(student)];
+        //this variable selects the promped name and its grade
+        let color = "blue";
+
+        if (grade < 60) color = "red";
+        else if (grade < 70) color = "yellow";
+        else if (grade < 100) color = "green";
+        else if (grade === 100) color = "blue"
+        //here its been told what happens if the score is smaller than
+        out.innerHTML = `${student} has reached <span style = 'color: ${color};'>${grade} </span> points in Math this season.`;
+        //this is how our result will be displayed in our html
+    } else {
+        out.innerHTML = "NO such student found.";
+        //this will happen if the user prompts a student that is non existent
+      }
+    </script>
+  </body>
+</html>
