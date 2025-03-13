@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+
+    <div class="container">
+    <!-- we create a container for out bootstrap -->
+        <h1>Exersice 3</h1>
+        <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4" id="result">
+            <!-- we create a flex system, call it result so i know where the cards are going -->
+        </div>
+    </div>
+    <script>
+
+const people = [
+{
+name: "Alice",
+age: 25,
+city: "New York",
+},
+{
+name: "Bob",
+age: 30,
+city: "Los Angeles",
+},
+{
+name: "Charlie",
+age: 35,
+city: "Chicago",
+},
+];
+//I createa an array with objects with different properties
+
+
+let result = document.getElementById("result");
+//I select the result id i created to be able to edit it in js
+
+people.forEach((person)=> {
+    //this is a loop with the variable "Person" that goes trough each of the people arrays
+    result.innerHTML += //with the .innerHTML Im able to change the HTML itself, in this case Im changing the content of the div with the id of result
+        `<div> 
+            <div class="card my-3">
+                <div class = "card-body">
+                    <h5 class = "card-title">${person.name}</h5>
+                    <p class = "card-text"> Age: ${person.age}</p>
+                    <p class = "card-text"> City: ${person.city}</p>
+                    ${person.age > 30? '<p class= "text-danger"> This person is over 30 years old.</p>': ""}
+                </div>
+            </div>
+        </div>
+        `;
+});
+//the div that sorrounds the cards
+//then i create the card itself with a marging of 3rem 
+//the card body is created
+//the body gets a title a text and another text
+//then if the persons age is bigger than 30 yo it will add a red text sayig that the person is over 30 years old
+    </script>
+</body>
+</html>
