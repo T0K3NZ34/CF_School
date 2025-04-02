@@ -102,5 +102,22 @@ const colors = ['Green', 'Blue', 'Red']
 for (const color of colors) {
   console.log(color);
 }
+// For of is used when you want to go trough an array
 
-// For of is used when you try to go trough an array
+//Break and Continue
+
+let va = 0;
+
+while (va<=10) {
+  if (va === 10) {
+    break;
+    //this takes you out of the loop completely
+  }
+  // if (va%2 === 0) {
+  //   continue;
+  //   //continue is very old and is not used at all
+  // }
+  //we jump to the next eteration
+  console.log(va);
+  va++;
+}
