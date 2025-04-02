@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Day5 Solutions</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .santa-grid{
+            width: 30%;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .santa-grid > img {
+            width: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Exercise 3</h1>
+
+    <div class="santa-grid">
+      <img
+        src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png"
+        alt="Present"
+      />
+      <img
+        class="santa"
+        src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png"
+        alt="Santa"
+      />
+      <img
+        src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png"
+        alt="Present"
+      />
+      <img
+        src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png"
+        alt="Present"
+      />
+      <img
+        class="santa"
+        src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png"
+        alt="Santa"
+      />
+      <img
+        src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png"
+        alt="Present"
+      />
+      <img
+        class="santa"
+        src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png"
+        alt="Santa"
+      />
+      <img
+        src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png"
+        alt="Present"
+      />
+      <img
+        class="santa"
+        src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png"
+        alt="Santa"
+      />
+    </div>
+    <script>
+        
+        let santas = document.querySelectorAll(".santa");
+
+        santas.forEach (santa=>{
+            santa.addEventListener("click", function(){
+            let visible = getComputedStyle(this).opacity;
+            if (visible == 1) {
+                this.style.opacity = 0;
+            }else{
+                this.style.opacity = 1;
+            }
+        })
+    })
+    </script>
+  </body>
+</html>

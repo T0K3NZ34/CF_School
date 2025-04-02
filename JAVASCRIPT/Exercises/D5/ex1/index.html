@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ex1</h1>
+    <form id="basic-form">
+      <input type="text" id="fName" />
+      <input type="text" id="lName" />
+      <input type="number" id="age" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <select id="select">
+      <option value="it">it</option>
+      <option value="hospitality">hospitality</option>
+      <option value="smt">something else</option>
+    </select>
+    <div id="basic-result"></div>
+    <div class="basic-result2"></div>
+    <!-- WHERE THE RESULT WILL COME -->
+
+    <script>
+      let form = document.querySelector("#basic-form");
+      let fNameinput = document.querySelector("#fName");
+      let lNameinput = document.querySelector("#lName");
+      let ageInput = document.querySelector("#age");
+      let results = document.querySelector("#basic-result");
+      let select = document.querySelector("#select");
+      //get the variables of thehtml to be used in js
+
+      form.addEventListener("submit", function (event) {
+        //add a listener fot what happens when the user submits the form
+        event.preventDefault();
+        //using this will the page prevent to refresh when adding values
+        let fName = fNameinput.value;
+        let lName = lNameinput.value;
+        let age = ageInput.value;
+        let profession = select.value;
+        //create ew variables to store the value of the inputs
+        switch (profession) {
+          case "it":
+            results.style.backgroundColor = "purple";
+            // dont forget the break ;)
+            break;
+          case "hospitality":
+            results.style.backgroundColor = "yellow";
+            break;
+          default:
+            results.style.backgroundColor = "lime";
+            break;
+        }
+        //to change the background
+      
+        if (fName.length > 5) {
+          results.style.color = "green";
+        } else {
+          results.style.color = "red";
+        }
+        //color change when the lenght of the inputs are > than 5
+
+     
+
+        results.innerHTML = `
+            <p>${fName}</p>
+            <p>${lName}</p>
+            <p>${age}</p>`;
+        //print the result on the page
+      });
+    </script>
+  </body>
+</html>

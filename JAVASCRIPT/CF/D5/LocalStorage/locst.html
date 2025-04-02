@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tasks = ["helo", "JOJO", "fjdkdslgh"];
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+        // Json stringify sconverts java objets or arrays into strings that can be saved in local storage
+        let storedTasks = localStorage.getItem('tasks');
+        console.log(storedTasks);
+        
+
+
+
+        let faveColor = "blue";
+        localStorage.setItem('favouriteColor', JSON.stringify(faveColor))
+        let color = localStorage.getItem('favouriteColor');
+        //this is how you access the iteem stored 
+        console.log(color);
+        
+        localStorage.removeItem('favouriteColor');
+        //this deletes a value form a specific key from the local storage
+        localStorage.removeItem("tasks");
+        //this removes the whole array from the local storage
+        
+    </script>
+</body>
+</html>
