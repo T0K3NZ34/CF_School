@@ -6,7 +6,7 @@ let number = 1;
 let isTrue = true;
 ////////
 let lname: string = "Doe"; //string
-let age: number = 30; //number
+let dage: number = 30; //number
 let isMarried: boolean = false; //boolean
 ///////
 //YOU SHOULD Be DECLARING THE TYPE OF VARIABLE
@@ -41,7 +41,7 @@ myArray2.forEach(element => {
 
 let myObject = {
     name: "John",
-    age: 30,
+    dage: 30,
     isMarried: false
 }
 
