@@ -1,0 +1,27 @@
+the backend is whatever happens in hte server side of the website
+like storing the items of your shopping card, liginf data etc.
+
+
+
+
+
+DATA BASE:
+where you save a importabt information you want to keep
+
+you can create something called tables:
+
+a table is a place to store data
+
+always plan before you create the database: if you buid a house you have to plan how to buld it, materials etc etc.
+
+
+.drawio ==> use this to create a draw io site
+
+
+brainstorming
+entity relations
+create tables
+
+each table you create has to have an extra field called id because u need a unique field to reach the data you want
+
+there is no need to connect the same data to one table if one table you already connected it has the information
